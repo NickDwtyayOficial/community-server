@@ -71,9 +71,9 @@ To use this script, you can modify the `find_cgnats()` function parameters and r
 find_cgnats('192.168.1.1', '192.168.1.254', 80)
 
 
-Claro, aqui está uma revisão do seu README.md com a adição de mais informações sobre outro código:
 
-markdown
+
+<!-- Este é um bloco de comentário no Markdown -->
 
 # community-server
 
