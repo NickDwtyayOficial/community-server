@@ -73,7 +73,7 @@ find_cgnats('192.168.1.1', '192.168.1.254', 80)
 
 
 
-<!-- Este é um bloco de comentário no Markdown -->
+```<!-- Este é um bloco de comentário no Markdown -->
 
 # community-server
 
