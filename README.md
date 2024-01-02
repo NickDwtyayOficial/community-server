@@ -78,9 +78,9 @@ for ns in nameservers:
 
 # community-server
 
----
+----
 
-# To_find_all_CGNAT_on_the_network.py
+## To_find_all_CGNAT_on_the_network.py
 
 This Python script (`To_find_all_CGNAT_on_the_network.py`) is designed to identify CGNAT (Carrier-Grade Network Address Translation) instances on a network by checking IP addresses within a specified range.
 
