@@ -41,7 +41,7 @@ This is a Python script to check if a specific port on an IP is open and to snif
 ----
 
 # Get Nameservers from Domain
-
+#Namesrv.py
 This Python script retrieves the nameservers associated with a domain using the `socket` and `whois` libraries.
 
 ## How It Works
