@@ -20,5 +20,25 @@ Make sure to understand these issues before using the script.
 
 ---
 
+# Sniffing_HTTP.py
+
+This is a Python script to check if a specific port on an IP is open and to sniff HTTP traffic on port 80 using the Scapy module.
+
+## How to Use
+
+### Prerequisites
+
+- Python 3.x
+- Installed Scapy (`pip install scapy`)
+
+### Running the Script
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NickDwtyayOficial/community-server/tree/main
+   cd community-server
+
+
+
 # community-server
 community server - NICK DWTYAY Ltd
