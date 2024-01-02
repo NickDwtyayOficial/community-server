@@ -80,6 +80,22 @@ for ns in nameservers:
 
 ----
 
+community server - NICK DWTYAY Ltd
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## To_find_all_CGNAT_on_the_network.py
 
 This Python script (`To_find_all_CGNAT_on_the_network.py`) is designed to identify CGNAT (Carrier-Grade Network Address Translation) instances on a network by checking IP addresses within a specified range.
@@ -105,4 +121,3 @@ To use this script, you can modify the `find_cgnats()` function parameters and r
 find_cgnats('192.168.1.1', '192.168.1.254', 80)
 
 
-community server - NICK DWTYAY Ltd
