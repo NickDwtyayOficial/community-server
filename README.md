@@ -40,38 +40,36 @@ This is a Python script to check if a specific port on an IP is open and to snif
 
 ----
 
-# Get Nameservers from Domain
-#Namesrv.py
-This Python script retrieves the nameservers associated with a domain using the `socket` and `whois` libraries.
+# community-server
 
-## How It Works
+This repository contains Python scripts for network-related tasks.
 
-The script defines a function `get_nameservers(domain_name)` that does the following:
+## Scripts
 
-1. Uses `socket.gethostbyname(domain_name)` to obtain the IP address associated with the domain.
-2. Utilizes `whois.whois(domain_name)` to retrieve registration information for the domain, including the nameservers.
-3. Checks if the nameservers are returned as a list or a single server and processes the result accordingly.
+### To_find_all_CGNAT_on_the_network.py
 
-## Example Usage
+This Python script (`To_find_all_CGNAT_on_the_network.py`) is designed to identify CGNAT (Carrier-Grade Network Address Translation) instances on a network by checking IP addresses within a specified range.
+
+#### How It Works
+
+The script defines two functions:
+
+##### `is_cgnat(ip, port)`
+
+- Connects to a server on the specified port and retrieves the IP address and port assigned by the CGNAT.
+- Checks if the assigned IP address is within a private address range.
+
+##### `find_cgnats(start_ip, end_ip, port)`
+
+- Iterates through a range of IP addresses and checks if each IP is a CGNAT.
+
+#### Usage
+
+To use this script, you can modify the `find_cgnats()` function parameters and run the script with appropriate IP address ranges and port number:
 
 ```python
-import socket
-import whois
+find_cgnats('192.168.1.1', '192.168.1.254', 80)
 
-def get_nameservers(domain_name):
-    ip_address = socket.gethostbyname(domain_name)
-    w = whois.whois(domain_name)
-    if isinstance(w.name_servers, list):
-        return w.name_servers
-    else:
-        return [w.name_servers]
-
-# Example Usage
-domain = "nickdwtyay.com.br"
-nameservers = get_nameservers(domain)
-print(f"Nameservers for the domain {domain}:")
-for ns in nameservers:
-    print(ns)
 
 
 
