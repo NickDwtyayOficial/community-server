@@ -90,6 +90,35 @@ community server - NICK DWTYAY Ltd
 
 
 
+# community-server
+
+This repository contains Python scripts for network-related tasks.
+
+## Scripts
+
+### To_find_all_CGNAT_on_the_network.py
+
+This Python script (`To_find_all_CGNAT_on_the_network.py`) is designed to identify CGNAT (Carrier-Grade Network Address Translation) instances on a network by checking IP addresses within a specified range.
+
+#### How It Works
+
+The script defines two functions:
+
+##### `is_cgnat(ip, port)`
+
+- Connects to a server on the specified port and retrieves the IP address and port assigned by the CGNAT.
+- Checks if the assigned IP address is within a private address range.
+
+##### `find_cgnats(start_ip, end_ip, port)`
+
+- Iterates through a range of IP addresses and checks if each IP is a CGNAT.
+
+#### Usage
+
+To use this script, you can modify the `find_cgnats()` function parameters and run the script with appropriate IP address ranges and port number:
+
+```python
+find_cgnats('192.168.1.1', '192.168.1.254', 80)
 
 
 
